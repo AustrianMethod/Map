@@ -12,7 +12,7 @@ export default class ErrorRepository {
       if (code && this.storage.get( code )) {
         return this.storage.get( code );
       } else {
-        return 'такого кода ошибки не существует'
+        return 'Unknown error';
       }
     }
 }
